@@ -4,7 +4,7 @@ def calculate_average(nums):
     total = 0
     for n in nums:
         total += n
-    average = total / len(nums)
+        average = total / len(nums)
     return average
 
 def find_even(nums):
