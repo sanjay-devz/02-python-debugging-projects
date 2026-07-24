@@ -7,9 +7,9 @@ items = {
 
 def calculate_discount(total):
     if total >= 1000:
-        return total * 5 / 100
-    elif total >= 500:
         return total * 10 / 100
+    elif total >= 500:
+        return total * 5 / 100
     else:
         return 0
 
@@ -23,11 +23,11 @@ bill = calculate_total(items)
 
 discount = calculate_discount(bill)
 
-final_amount = bill + discount
+final_amount = bill - discount
 
-print("Original Bill :", final_amount)
+print("Original Bill :", bill)
 print("Discount      :", discount)
-print("Final Amount  :", bill)
+print("Final Amount  :", final_amount)
 
 highest_item = max(items, key=items.get)
 print("\nMost Expensive Item:", highest_item, "-", items[highest_item])
