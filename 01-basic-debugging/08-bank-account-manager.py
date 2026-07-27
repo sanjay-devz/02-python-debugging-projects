@@ -40,7 +40,7 @@ def total_balance(data):
 
 accounts[0].deposit(1500)
 
-accounts[1].withdraw(1000)
+accounts[1].withdraw(4000)
 
 accounts[2].withdraw(2000)
 
