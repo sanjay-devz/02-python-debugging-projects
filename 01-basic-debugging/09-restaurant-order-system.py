@@ -11,7 +11,7 @@ class Customer:
         total = 0
 
         for order in self.orders:
-            total += int(order[1])
+            total += order[1]
 
         return total
 

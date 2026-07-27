@@ -58,4 +58,4 @@ richest.display()
 
 accounts.append(BankAccount("David", 4000))
 
-print("\nUpdated Total Balance:", total_balance(accounts))
+print("\nUpdated Total Balance:", total_balance(accounts))  
