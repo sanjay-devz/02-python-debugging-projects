@@ -18,15 +18,15 @@ class Customer:
     def discount(self):
         bill = self.total_bill()
 
-        if bill > 100:
-            return bill * 5 / 100
-        elif bill > 200:
+        if bill > 200:
             return bill * 10 / 100
+        elif bill > 100:
+            return bill * 5 / 100
         else:
             return 0
 
     def final_bill(self):
-        return self.total_bill() + self.discount()
+        return self.total_bill()  - self.discount()
 
     def display(self):
         print(f"Customer : {self.name}")
@@ -73,6 +73,6 @@ print("\nHighest Spending Customer")
 highest.display()
 
 customers.append(Customer("David"))
-customers[-1].add_order("Pasta", 110)
+customers[3].add_order("Pasta", 110)
 
 print("\nUpdated Collection:", restaurant_total(customers))
