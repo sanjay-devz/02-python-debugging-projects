@@ -5,10 +5,10 @@ vehicles = [
     ["TN14EF1111", 1]
 ]
  
-RATE_PER_HOUR = 30
+RATE_PER_hour = 30
 
-def calculate_fee(hours):
-    return hours * RATE_PER_HOUR
+def calculate_fee(hour):
+    return hour * RATE_PER_hour
 
 def parking_summary(data):
     total = 0
@@ -20,7 +20,7 @@ def parking_summary(data):
         fee = calculate_fee(hours)
 
         print(f"Vehicle: {number}")
-        print(f"Hours  : {hours}")
+        print(f"hours  : {hours}")
         print(f"Fee    : ₹{fee}")
         print("-" * 25)
 
