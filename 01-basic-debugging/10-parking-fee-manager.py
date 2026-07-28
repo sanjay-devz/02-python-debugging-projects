@@ -55,7 +55,7 @@ def total_collection(data):
     total = 0
 
     for vehicle in data:
-        total += vehicle.fee()
+        total += vehicle.final_fee()
 
     return total
 
@@ -67,7 +67,7 @@ for vehicle in vehicles:
 
 print("Total Collection:", total_collection(vehicles))
 
-highest = min(vehicles, key=lambda v: v.final_fee())
+highest = max(vehicles, key=lambda v: v.final_fee())
 
 print("\nHighest Paying Vehicle")
 highest.display()
