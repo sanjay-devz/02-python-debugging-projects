@@ -35,7 +35,6 @@ class Guest:
         print(f"Bill     : £{self.final_bill()}")
         print("-" * 30)
 
-
 guests = [
     Guest("Alice"),
     Guest("Bob"),
