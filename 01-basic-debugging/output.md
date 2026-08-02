@@ -1,24 +1,23 @@
-PARKING REPORT
+HOTEL BOOKING REPORT
 
-Vehicle : TN10AB1234
-Records : 2
-Fee     : $108.0
+Guest    : Alice
+Bookings : 2
+Bill     : £558.0
 ------------------------------
-Vehicle : TN09XY5678
-Records : 2
-Fee     : $66.5
+Guest    : Bob
+Bookings : 2
+Bill     : £234
 ------------------------------
-Vehicle : TN22CD9876
-Records : 2
-Fee     : $142.2
+Guest    : Charlie
+Bookings : 2
+Bill     : £918.0
 ------------------------------
-Total Collection: 316.7
+Hotel Revenue: 1710.0
 
-Highest Paying Vehicle
-Vehicle : TN22CD9876
-Records : 2
-Fee     : $142.2
+Highest Paying Guest
+Guest    : Charlie
+Bookings : 2
+Bill     : £918.0
 ------------------------------
 
-Updated Collection: 392.7
-
+Updated Revenue: 2070.0
