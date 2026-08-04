@@ -5,7 +5,7 @@ class Guest:
         self.bookings = []
 
     def add_booking(self, nights, price):
-        self.bookings = (nights, price)
+        self.bookings.append((nights, price))
 
     def room_bill(self):
         total = 0
@@ -20,9 +20,9 @@ class Guest:
         bill = self.room_bill()
 
         if bill > 500:
-            return bill * 0.15
+            return bill * 15/100
         elif bill > 250:
-            return bill * 0.1
+            return bill * 10/100
         else:
             return 0
 
@@ -55,7 +55,7 @@ def hotel_revenue(data):
     total = 0
 
     for guest in data:
-        total += guest.bill()
+        total += guest.final_bill()
 
     return total
 
