@@ -13,4 +13,5 @@ discount = 50
 final_bill = bill - discount
 
 print("Bill:", bill)
-print("Final Bill:", final_bill)  
+print("Final Bill:", final_bill) 
+

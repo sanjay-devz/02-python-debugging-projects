@@ -30,7 +30,7 @@ def display_report(data):
         status = eligibility(percent)
 
         print(name)
-        print(f"Attendance: {percent:.2f}")
+        print(f"Attendance: {percent:.2f}") 
         print("Status:", status)
         print("-" * 25)
 
